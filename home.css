@@ -1,0 +1,125 @@
+/* Import GFonts e Material Icons */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&family=Courgette&family=Keania+One&display=swap&family=Material+Icons+Round&family=Material+Icons+Outlined');
+
+
+html {
+	font-size: 62.5%;
+	overflow: hidden;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	color: white;
+	line-height: 1.5;
+	background-image: url(./Images/Africano2.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+img {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+div {
+	margin: 0 auto;
+}
+
+.pag1 {
+	display: grid;
+	grid-template-areas: 
+	"avatar" 
+	"social";
+	grid-template-rows: 1fr 1fr;
+	gap: 2vw;
+	height: 80vh;
+	width: 100vw;
+	max-width: 1920px;
+	margin: 5% auto;
+	place-content: center; /*centraliza tudo*/
+}
+
+.avatar {
+	grid-area: avatar;
+	margin-top: 5vh;
+}
+
+.avatar img {
+	filter:drop-shadow(0 0 5px white);
+}
+
+p {
+	font-size: clamp(1.4rem, 3vw, 2.5rem);
+	font-weight: bold;
+	text-shadow: blue 0.1em 0.1em 0.6em;
+	text-align: center;
+}
+
+.social {
+	grid-area: social;
+}
+
+button {
+	border-radius: 10px;
+	font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+	line-height: 7vh;
+	font-weight: bold;
+	color: white;
+	border: solid 0.5px white;
+	width: 40vw;
+}
+
+.face  button{
+	background-color: #3b5998;
+}
+
+.insta button{
+	background-color: #e34165;
+}
+
+.chat button{
+	background-color: #008069;
+}
+
+.foot {
+	height: 10vh;
+}
+
+
+
+/* PHONE E TABLET RETRATO */
+
+@media (max-width: 780px) {
+
+	body {
+		overflow: hidden;
+	}
+
+	img {
+		width: 45%;
+	}
+
+	button {
+		width: 80vw;
+		line-height: 5vh;
+	}
+
+
+	.pag1 {
+		gap: 6vw;
+		height: 98vh;
+		width: 95vw;
+		margin: 0 auto;
+	}
+
+	.avatar {
+		margin-top: 10vh;
+	}
+
+	
+
+}
